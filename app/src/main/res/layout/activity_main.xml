@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:background="#000000"
+    android:layout_height="match_parent"
+    tools:context="com.example.purvampujari.bolllywood.MainActivity">
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="67dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:background="#c7052c"
+        android:orientation="vertical"
+        android:padding="5dp">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="#ffffff"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Player 1"
+            android:textColor="@android:color/black"
+            android:textSize="21sp"
+            android:textStyle="normal|bold" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="1dp"
+            android:background="#ffffff"
+            android:gravity="center_vertical|center_horizontal"
+            android:hint="Name"
+            android:textColor="#c7052c"
+            android:textSize="21sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll1"
+        android:id="@+id/ll2"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="50dp"
+        android:background="#0ca60b"
+        android:orientation="vertical"
+        android:padding="5dp">
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Player 2"
+            android:textColor="@android:color/black"
+            android:textSize="21sp"
+            android:textStyle="normal|bold" />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="1dp"
+            android:background="#ffffff"
+            android:gravity="center_vertical|center_horizontal"
+            android:hint="Name"
+            android:textColor="#0ca60b"
+            android:textSize="21sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll2"
+        app:srcCompat="@drawable/bb"
+        android:layout_above="@+id/button3"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageView3" />
+
+    <TextView
+        android:text=" B O L L Y W O O D "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bol"
+        android:background="#000000"
+        android:textColor="#4aafd7"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:textStyle="normal|bold|italic"
+        android:textSize="40sp" />
+    <TextView
+        android:id="@+id/bolly2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/bol"
+        android:layout_marginTop="2dp"
+        android:background="#ffffff"
+        android:text="TextView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="#1763a6"
+        android:onClick="start"
+        android:text="OK !"
+        android:textColor="#ffffff"
+        android:textStyle="normal|bold"
+        android:id="@+id/button3"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
